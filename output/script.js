@@ -60,3 +60,22 @@ drawRectabgle({
     length: 20
 });
 // working with interface ///////
+// generics///////
+const addId = (obj) => {
+    let id = Math.floor(Math.random() * 100);
+    return Object.assign(Object.assign({}, obj), { id });
+};
+let user = addId({
+    name: "ibne alam",
+    age: 20,
+});
+// let user = "arafat"
+addId(user);
+const response1 = {
+    status: 200,
+    type: "good",
+    data: {
+        name: "text",
+        something: 2000
+    }
+};

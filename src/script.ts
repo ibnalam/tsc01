@@ -94,6 +94,8 @@ function drawRectabgle(options: ractegleOptions) {
     let length = options.length
 }
 
+
+
 drawRectabgle({
     width: 30,
     length: 20
@@ -105,10 +107,38 @@ drawRectabgle({
 
 // working with interface ///////
 
+// generics///////
+
+const addId = <T extends object>(obj: T) =>{
+    let id = Math.floor(Math.random() * 100)
+    return { ...obj, id}
+}
+
+let user = addId({
+    name: "ibne alam",
+    age: 20,
+})
+
+// let user = "arafat"
+
+
+addId(user)
 
 
 
+// 
+interface APIResponse<T> {
+    status: number
+    type: string
+    data: T
+}
 
-
-
+const response1: APIResponse<object> = {
+    status: 200,
+    type: "good",
+    data: {
+        name: "text",
+        something: 2000
+    }
+}
 
