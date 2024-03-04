@@ -127,18 +127,35 @@ addId(user)
 
 
 // 
+
+enum RType { SUCCESS, FATLURE, UNATHENTICATED, FORBIDDEN}
+
+
 interface APIResponse<T> {
     status: number
-    type: string
+    type: RType
     data: T
 }
 
-const response1: APIResponse<object> = {
+const response1: APIResponse<string> = {
     status: 200,
-    type: "good",
-    data: {
-        name: "text",
-        something: 2000
-    }
+    type: RType.SUCCESS,
+    data: "test"
 }
+
+console.log(response1);
+
+
+// enum types  //
+
+
+
+
+
+
+
+
+
+
+
 

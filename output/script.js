@@ -71,11 +71,18 @@ let user = addId({
 });
 // let user = "arafat"
 addId(user);
+// 
+var RType;
+(function (RType) {
+    RType[RType["SUCCESS"] = 0] = "SUCCESS";
+    RType[RType["FATLURE"] = 1] = "FATLURE";
+    RType[RType["UNATHENTICATED"] = 2] = "UNATHENTICATED";
+    RType[RType["FORBIDDEN"] = 3] = "FORBIDDEN";
+})(RType || (RType = {}));
 const response1 = {
     status: 200,
-    type: "good",
-    data: {
-        name: "text",
-        something: 2000
-    }
+    type: RType.SUCCESS,
+    data: "test"
 };
+console.log(response1);
+// enum types  //
