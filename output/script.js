@@ -51,4 +51,12 @@ const players = [];
 players.push(ibne);
 players.push(arafat);
 players.push(mejan);
-// module system ///////
+function drawRectabgle(options) {
+    let width = options.width;
+    let length = options.length;
+}
+drawRectabgle({
+    width: 30,
+    length: 20
+});
+// working with interface ///////

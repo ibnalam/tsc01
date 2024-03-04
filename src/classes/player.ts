@@ -1,7 +1,9 @@
+import {isplayer} from '../interface/isplayer.js'
 
-export class player {
+
+export class player implements isplayer {
     public name: string;
-    private age: number;
+    public age: number;
     readonly country: string;
     
 

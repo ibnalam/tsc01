@@ -82,10 +82,31 @@ players.push(arafat)
 players.push(mejan)
 
 
+interface ractegleOptions {
+    width: number;
+    length: number;
+}
+
+function drawRectabgle(options: ractegleOptions) {
+    
+
+    let width = options.width
+    let length = options.length
+}
+
+drawRectabgle({
+    width: 30,
+    length: 20
+})
 
 
 
-// module system ///////
+
+
+// working with interface ///////
+
+
+
 
 
 
