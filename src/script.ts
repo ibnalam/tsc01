@@ -29,10 +29,47 @@
 
 // warking with classes  //////////
 
+// class player {
+//     name: string;
+//     age: number;
+//     country: string;
+    
+
+//     constructor(n: string, a: number, c: string){
+//         this.name = n;
+//         this.age = a;
+//         this.country = c;
+//     }
+//     play(){
+//         console.log(`${this.name} from ${this.country} is playing!`);
+//     }
+// }
+
+// const arafat = new player("arafat", 40, "bangladesh")
+// const ibne = new player("ibne", 30, "bangladesh")
+// const mejan = new player("mejan", 20, "bangladesh")
+
+// // console.log(ibne.name);
+
+
+// const players: player[] = [];
+
+// players.push(ibne)
+// players.push(arafat)
+// players.push(mejan)
+
+
+
+
+
+
+//  Access Modifiers/////////
+
+
 class player {
-    name: string;
-    age: number;
-    country: string;
+    public name: string;
+    private age: number;
+    readonly country: string;
     
 
     constructor(n: string, a: number, c: string){
@@ -49,7 +86,10 @@ const arafat = new player("arafat", 40, "bangladesh")
 const ibne = new player("ibne", 30, "bangladesh")
 const mejan = new player("mejan", 20, "bangladesh")
 
-console.log(ibne.name);
+
+
+
+
 
 
 const players: player[] = [];
@@ -57,8 +97,6 @@ const players: player[] = [];
 players.push(ibne)
 players.push(arafat)
 players.push(mejan)
-
-
 
 
 
